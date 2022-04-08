@@ -35,7 +35,7 @@ margin-left: -200px;
     display: block;
     position: absolute;
     top: -50px;
-    right: 100px;
+    right: 280px;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
@@ -132,20 +132,21 @@ cursor: pointer;
 `
 
 export const NavButtonLink = styled(LinkRouter)`
-background: none;
-white-space: nowrap;
-padding: 10px 22px;
-color: #f5f5f5;
-font-size: 16px;
-outline: none;
-border: none;
-cursor: pointer;
-transition: all 0.2s ease-in-out;
-text-decoration: none;
+display:inline-block;
+padding:0.3em 1.2em;
+margin:0 0.3em 0.3em 0;
+border-radius:2em;
+box-sizing: border-box;
+text-decoration:none;
+font-family:'Roboto',sans-serif;
+font-weight:300;
+color: white;
+background-color: #4eb5f1;
+text-align: center;
+transition: all 0.2s;
 
 &:hover {
-    transition: all 0.2s ease-in-out;
-    background: none;
-    color: #945147;
+    background-color:#4095c6;
+
 }
 `

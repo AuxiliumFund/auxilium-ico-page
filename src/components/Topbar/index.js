@@ -25,7 +25,7 @@ const Topbar = ({isOpen, toggle}) => {
           <TopBarRoute1 to="/docs">Docs</TopBarRoute1>
         </TopBarMenu>
         <TopButtonWrap>
-          <TopBarRoute to="/enterapp">Enter App</TopBarRoute>
+          <TopBarRoute to="/enterapp">Connect Wallet</TopBarRoute>
         </TopButtonWrap>
       </TopBarWrapper>
     </TopBarContainer>

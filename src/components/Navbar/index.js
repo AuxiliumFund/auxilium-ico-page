@@ -65,7 +65,7 @@ const Navbar = ({ toggle }) => {
               <NavButtonLinkDocs to="/">Docs</NavButtonLinkDocs>
             </NavItem>
             <NavButton>
-              <NavButtonLink to="/">Enter App</NavButtonLink>
+              <NavButtonLink to="/">Connect Wallet</NavButtonLink>
             </NavButton>
           </NavMenu>
         </NavbarContainer>

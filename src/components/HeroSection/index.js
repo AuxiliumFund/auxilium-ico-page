@@ -1,43 +1,68 @@
-import React, { useState } from "react";
-import Video from "../../videos/video.mp4";
-import { Button } from "../ButtonElement";
+
+
 import {
   HeroContainer,
-  HeroBg,
-  VideoBg,
-  HeroContent,
+  HeroContent1,
   HeroH1,
-  HeroP,
-  HeroButtonWrapper,
+  HeroP1,
+  HeroContent2,
+  HeroH2,
+  HeroP2,
+  ButtonContainer,
+  ButtonLink1,
+  Img,
+  Img2,
+  ImgWrapper
 } from "./HeroElements";
 
+import img1 from '../../images/free.png';
+import img2 from '../../images/presale.png';
 
 
 const HeroSection = () => {
-    const [hover, setHover] = useState(false);
+  // const [hover, setHover] = useState(false);
 
-    const onHover = () => {
-        setHover(!hover);
-    }
+  // const onHover = () => {
+  //   setHover(!hover);
+  // };
+
+  /* token purchase functionality */
+  // const onClick = () => {
+  //   console.log("clicked");
+  
+  // }
 
   return (
     <HeroContainer id="home">
-      <HeroBg>
-        <VideoBg autoPlay loop muted src={Video} stype="video/mp4" />
-      </HeroBg>
-      <HeroContent>
-        <HeroH1>We help you stay afloat.</HeroH1>
-        {/* <HeroH2>While you work your way back up.</HeroH2> */}
-        <HeroP>The Auxilium Fund was founded as a decentralized CaaS crypto protocol that enables NFT compensation for rug pull victims across all chains. We help those who lost their hard-earned funds and reward investors with sustainable returns for a unique DeFi experience.</HeroP>
-        {/* <HeroButtonWrapper>
-          <Button to="learnmore" onMouseHover={onHover} onMouseLeave={onHover}
-          primary='true'
-          dark='true'
-          >
-            Learn More 
-          </Button>
-        </HeroButtonWrapper> */}
-      </HeroContent>
+      <HeroContent1>
+        <HeroH1>Pre-Sale</HeroH1>
+        <HeroP1>
+          The first 24 hours will be exclusively available for whitelisted
+          "Genesis" holders. Public sale will begin right after - total time to
+          raise funds is 48 hours.
+        </HeroP1>
+        <HeroP1 style = {{color: 'white'}}>Max. buy per wallet: 5,000 $USDC</HeroP1>
+        <ImgWrapper>
+        <Img src={img1} alt="free" />
+        </ImgWrapper>
+      </HeroContent1>
+      <HeroContent2>
+      <ImgWrapper>
+        <Img2 src={img2} alt="free" />
+        </ImgWrapper>
+        <HeroH2>Pre-Sale Allocation</HeroH2>
+        <HeroP2>
+          20 percent Team Fund for future development and hiring of staff 
+          </HeroP2>
+          <HeroP2>80
+          percent Liquidity for AVAX/WAVAX and USDC liquidity pools
+        </HeroP2>
+        <ButtonContainer>
+          {/* buttons will need onClick  */}
+          <ButtonLink1>Approve $USDC</ButtonLink1>
+          <ButtonLink1>Buy $AUXL</ButtonLink1>
+        </ButtonContainer>
+      </HeroContent2>
     </HeroContainer>
   );
 };

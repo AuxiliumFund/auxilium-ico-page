@@ -70,10 +70,10 @@ justify-content: center;
 
 export const TopBarRoute = styled(LinkRouter)`
 border-radius: 50px;
-background:#945147;
 white-space: nowrap;
 padding: 16px 64px;
 color: #fff;
+background-color: #4eb5f1;
 font-size: 16px;
 outline: none;
 border: none;
@@ -82,9 +82,7 @@ transition: all 0.2s ease-in-out;
 text-decoration: none;
 
 &:hover {
-    transition: 0.2s ease-in-out;
-    background: #fff;
-    color: #945147;
+    background-color:#4095c6
     `
 
     export const TopBarRoute1 = styled(LinkRouter)`

@@ -28,37 +28,20 @@ export const HeroContainer = styled.div`
   }
 `;
 
-export const HeroBg = styled.div`
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+export const HeroContent1 = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
-  height: 100%;
-  overflow: hidden;
-`;
 
-export const VideoBg = styled.video`
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  background: #23234;
-`;
-
-export const HeroContent = styled.div`
-  z-index: 3;
-  max-width: 1200px;
-  position: absolute;
-  padding: 8px 24px;
-  flex-direction: column;
-  algn-items: center;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const HeroH1 = styled.h1`
   color: #f5f5f5;
-  font-size: 48px;
+  font-size: 60px;
   text-align: center;
 
   @media screen and (max-width: 768px) {
@@ -72,8 +55,9 @@ export const HeroH1 = styled.h1`
 
 export const HeroH2 = styled.h2`
   color: #f5f5f5;
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
+  margin-left: 150px;
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -84,14 +68,26 @@ export const HeroH2 = styled.h2`
   }
 `;
 
-export const HeroP = styled.p`
+export const HeroContent2 = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
+export const HeroP1 = styled.p`
   margin-top: 24px;
-  color: #f5f5f5;
-  font-size: 24px;
+  color: #717171;
+  font-size: 15px;
   text-align: center;
   max-width: 600px;
+
   @media screen and (max-width: 768px) {
-    font-size: 24px;
+    font-size: 15px;
   }
 
   @media screen and (max-width: 480px) {
@@ -99,12 +95,53 @@ export const HeroP = styled.p`
   }
 `;
 
-export const HeroButtonWrapper = styled.div`
-  margin-top: 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+export const HeroP2 = styled.p`
+  margin-left: 150px;
+  margin-top: 24px;
+  color: #f5f5f5;
+  font-size: 12px;
+  text-align: center;
+  max-width: 600px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+  }
 `;
+
+export const ButtonContainer = styled.div`
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  height: 250px;
+  position: relative;
+  z-index: 1;
+`;
+
+export const ButtonLink1 = styled.button`
+display: inline-block;
+padding: 0.3em 1.2em;
+margin: 0 0.3em 0.3em 0;
+margin-left: 20px;
+border-radius: 2em;
+box-sizing: border-box;
+text-decoration: none;
+font-family: 'Roboto',sans-serif;
+font-weight: 300;
+color: #FFFFFF;
+background-color: #4eb5f1;
+text-align: center;
+transition: all 0.2s;
+
+&:hover {
+    background-color: #4095c6;
+
+}
+`
 
 export const ArrowForward = styled(MdArrowForward)`
   margin-left: 8px;
@@ -115,3 +152,36 @@ export const ArrowRight = styled(MdArrowRight)`
   margin-left: 8px;
   font-size: 20px;
 `;
+
+
+export const ImgWrapper = styled.div`
+max-width: 555px;
+height: 100%;
+`
+
+export const Img = styled.img`
+position: absolute;
+top: 120px;
+width: 300px;
+height: 300px;
+margin: 0 0 10px 0;
+padding-right: 0;
+
+@media screen and (max-width: 768px) {
+  display: none;
+}
+`
+
+export const Img2 = styled.img`
+position: absolute;
+top: 100px;
+right: 250px;
+width: 150px;
+height: 150px;
+margin: 0 0 10px 0;
+padding-right: 0;
+
+@media screen and (max-width: 768px) {
+  display: none;
+}
+`
